@@ -8,7 +8,7 @@
                 <h3>{{ $t(channel.function.caption) }}</h3>
                 <dl>
                     <dd>{{ $t('Device') }}</dd>
-                    <dt>{{ $t(channel.iodevice.name) }}</dt>
+                    <dt>{{ channel.iodevice.name }}</dt>
                     <dd>{{ $t('Type') }}</dd>
                     <dt>{{ $t(channel.type.caption) }}</dt>
                     <dd>{{ $t('Location') }}</dd>
@@ -50,7 +50,7 @@
 </template>
 
 <script>
-    import FunctionIcon from "./function-icon.vue";
+    import FunctionIcon from "../channels/function-icon.vue";
     import DeviceConnectionStatusLabel from "../devices/list/device-connection-status-label.vue";
 
     export default {
